@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#54C9D8"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/servet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Servet Hotel"
+        android:textColor="@android:color/white"
+        android:padding="20dp"
+        android:paddingBottom="10dp"
+        android:textSize="45sp"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/servet"
+        android:text="The hotel was built in 2020 with the aim of giving people the comfort and coziness of home. Located in the center of Jalal-Abad, which is very convenient for everyone. Come to visit us, we are always glad to everyone! "
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:padding="20dp"
+        android:paddingTop="0dp"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="285dp"
+        android:layout_below="@id/View"
+        android:layout_marginTop="-2dp"
+        android:paddingTop="20dp"
+        app:srcCompat="@drawable/images" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Order the room"
+        app:backgroundTint="@android:color/white"
+        android:textColor="#54C9D8"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_below="@id/imageView"
+        android:layout_margin="20dp"/>
+
+
+</RelativeLayout>
